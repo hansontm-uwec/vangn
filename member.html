@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="toggle-nav.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16"/>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="images/icons/logo.svg" alt="Succs to Succ logo"></a>
+        <nav class="toggle-nav">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="shop.html">Shop</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="eventstips.html">Events & Tips</a>
+            <a href="member.html">Become a Member</a>
+            <a href="checkout.html">Cart & Checkout</a>
+        </nav>
+        <div class="hamburger" onclick="toggleNav()">
+            <hr>
+            <hr>
+            <hr>
+        </div>
+    </header>
+    <main>
+        <img src="images/headers/memberi.svg" alt="membership logo" class="content">
+        <div class="membership">
+            <h2>What is a Succs Member?</h2>
+            <p>Members get perks and rewards for being our loyal customers. It's our way to give back! They get early access to new products, first pics on waitlist items, gain points which you can redeem for rewards, and more! It's easy and free to join! Fill out this form, or ask your cashier to join the program!</p>
+            <form class="meform">
+                <h3>Membership Form</h3>
+                <input type="name" id="fullname" value="Name">
+                <input type="date" id="bdate">
+                <input type="tel" id="pnumber" value="Phone Number">
+                <input type="email" id="email" value="Email">
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

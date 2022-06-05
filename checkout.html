@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="toggle-nav.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16"/>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="images/icons/logo.svg" alt="Succs to Succ logo"></a>
+        <nav class="toggle-nav">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="shop.html">Shop</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="eventstips.html">Events & Tips</a>
+            <a href="member.html">Become a Member</a>
+            <a href="checkout.html">Cart & Checkout</a>
+        </nav>
+        <div class="hamburger" onclick="toggleNav()">
+            <hr>
+            <hr>
+            <hr>
+        </div>
+    </header>
+    <main>
+        <img src="images/headers/carti.svg" alt="Cart and Checkout logo" class="content">
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <img src="images/leaf-cuttings-pack-3-300x300.jpg" alt="succulent cutttings">
+            <div class="description">
+                <p><b>Cutting Bundle - 5 Cuttings</b> <i>(x1)</i></p>
+                <p><i>$10.00</i></p>
+                <p>Randomly selected cuttings with baby succulents growing</p>
+                <button>Remove</button>
+            </div>
+            <img src="images/mini-succulents-300x300.jpg" alt="mini succulents">
+            <div class="description">
+                <p><b>Small Succulent</b> <i>(x5)</i></p>
+                <p><i>$15.00 ($3.00 each)</i></p>
+                <p>Randomly selected start of baby succulents</p>
+                <button>Remove</button>
+            </div>
+        </div>
+        <div class="total">
+            <h2>Total</h2>
+            <div>
+                <h4>Items</h4>
+                <p>6 items</p>
+                <hr>
+                <h4>Subtotal</h4>
+
+                <p>$25.00</p>
+                <hr>
+                <form>
+                    <fieldset>
+                        <legend>Delivery Method</legend>
+                        <input type="radio" id="shipping" name="delivery">
+                        <label for="shipping">Shipping</label><br/>
+                        <input type="radio" id="pick" name="delivery">
+                        <label for="pick">Pick up in Store</label>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="pay">
+                <h3>Payment Options</h3>
+                <a href="https://www.paypal.com/us/home"><img src="images/icons/iconmonstr-paypalw.svg" alt="paypal icon"></a>
+                <img src="images/icons/iconmonstr-credit-cardw.svg" alt="credit card image">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
